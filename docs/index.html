@@ -1,59 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fontanería El Rápido</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
 </head>
 <body>
   <header class="hero">
-    <h1>Fontanería El Rápido</h1>
-    <p>Soluciones profesionales en plomería 24/7</p>
-    <a href="#contacto" class="btn">Solicitar servicio</a>
+    <div class="overlay">
+      <h1>Fontanería El Rápido</h1>
+      <p>Soluciones urgentes y profesionales 24/7</p>
+      <a href="#contacto" class="btn">Solicitar Servicio</a>
+    </div>
   </header>
 
   <nav class="navbar">
-    <a href="#servicios">Servicios</a>
-    <a href="#galeria">Galería</a>
-    <a href="#testimonios">Testimonios</a>
-    <a href="#contacto">Contacto</a>
+    <ul>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#testimonios">Testimonios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
   </nav>
 
   <section id="servicios">
-    <h2>Servicios que ofrecemos</h2>
+    <h2>Servicios</h2>
     <div class="cards">
-      <div class="card">🚿 Instalación de duchas</div>
-      <div class="card">🛁 Reparación de sanitarios</div>
-      <div class="card">🔧 Mantenimiento preventivo</div>
-      <div class="card">🚰 Fugas y tuberías</div>
+      <div class="card">🔧 Reparación de fugas</div>
+      <div class="card">🚿 Instalación de sanitarios</div>
+      <div class="card">🛠 Mantenimiento preventivo</div>
+      <div class="card">💧 Diagnóstico y solución de presión</div>
     </div>
   </section>
 
   <section id="galeria">
-    <h2>Galería de trabajos</h2>
+    <h2>Trabajos Recientes</h2>
     <div class="galeria">
-      <img src="https://via.placeholder.com/300x200" alt="Trabajo 1">
-      <img src="https://via.placeholder.com/300x200" alt="Trabajo 2">
-      <img src="https://via.placeholder.com/300x200" alt="Trabajo 3">
+      <img src="https://via.placeholder.com/300x200" alt="Trabajo 1" />
+      <img src="https://via.placeholder.com/300x200" alt="Trabajo 2" />
+      <img src="https://via.placeholder.com/300x200" alt="Trabajo 3" />
     </div>
   </section>
 
   <section id="testimonios">
     <h2>Lo que dicen nuestros clientes</h2>
-    <blockquote>"Excelente servicio, puntuales y profesionales" – Ana R.</blockquote>
-    <blockquote>"Rápidos y confiables. Los recomiendo al 100%" – Carlos M.</blockquote>
+    <blockquote>"Servicio rápido y profesional, resolvieron todo en una visita. – Ana R."</blockquote>
+    <blockquote>"¡Los mejores! Buen precio y excelente atención. – Carlos M."</blockquote>
   </section>
 
   <section id="contacto">
     <h2>Contáctanos</h2>
-    <a class="btn-whatsapp" href="https://wa.me/50371234567" target="_blank">💬 WhatsApp</a>
-    <p>Correo: fontaneria@gmail.com</p>
+    <p>¿Necesitás ayuda urgente? Escríbenos directamente:</p>
+    <a class="btn-wsp" href="https://wa.me/50371234567" target="_blank">💬 WhatsApp</a>
+    <p>Correo: <a href="mailto:contacto@fontanerialrapido.com">contacto@fontanerialrapido.com</a></p>
+    <div class="redes">
+      <a href="https://facebook.com/fontaneriaelrapido" target="_blank">🌐 Facebook</a>
+      <a href="https://instagram.com/fontaneriaelrapido" target="_blank">📸 Instagram</a>
+      <a href="mailto:info@fontaneriaelrapido.com">📧 Email</a>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Fontanería El Rápido | Sitio de presentación</p>
+    <p>© <span id="year"></span> Fontanería El Rápido • Todos los derechos reservados</p>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
 
