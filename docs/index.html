@@ -2,45 +2,32 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fontanería El Rápido</title>
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <nav>
-    <h2>Fontanería El Rápido</h2>
-    <ul>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#cotiza">Cotiza</a></li>
-      <li><a href="#galeria">Galería</a></li>
-      <li><a href="#testimonios">Testimonios</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-
-  <header>
-    <h1>Soluciones confiables y rápidas</h1>
-    <p>Servicio profesional de plomería 24/7</p>
+  <header class="hero">
+    <h1>Fontanería El Rápido</h1>
+    <p>Soluciones profesionales en plomería 24/7</p>
+    <a href="#contacto" class="btn">Solicitar servicio</a>
   </header>
 
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <ul>
-      <li>🚰 Reparación de fugas</li>
-      <li>🛁 Instalación de sanitarios y grifería</li>
-      <li>🔧 Mantenimiento preventivo</li>
-      <li>🚿 Instalación de calentadores</li>
-    </ul>
-  </section>
+  <nav class="navbar">
+    <a href="#servicios">Servicios</a>
+    <a href="#galeria">Galería</a>
+    <a href="#testimonios">Testimonios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
-  <section id="cotiza">
-    <h2>Solicita una cotización</h2>
-    <form>
-      <input type="text" placeholder="Tu nombre" required>
-      <input type="email" placeholder="Correo electrónico" required>
-      <textarea placeholder="¿Qué necesitas?" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+  <section id="servicios">
+    <h2>Servicios que ofrecemos</h2>
+    <div class="cards">
+      <div class="card">🚿 Instalación de duchas</div>
+      <div class="card">🛁 Reparación de sanitarios</div>
+      <div class="card">🔧 Mantenimiento preventivo</div>
+      <div class="card">🚰 Fugas y tuberías</div>
+    </div>
   </section>
 
   <section id="galeria">
@@ -54,18 +41,19 @@
 
   <section id="testimonios">
     <h2>Lo que dicen nuestros clientes</h2>
-    <blockquote>"¡Rápidos, eficientes y muy amables!" – Ana R.</blockquote>
-    <blockquote>"Resolvieron una fuga en minutos. Muy recomendados." – Carlos M.</blockquote>
+    <blockquote>"Excelente servicio, puntuales y profesionales" – Ana R.</blockquote>
+    <blockquote>"Rápidos y confiables. Los recomiendo al 100%" – Carlos M.</blockquote>
   </section>
 
   <section id="contacto">
     <h2>Contáctanos</h2>
-    <a href="https://wa.me/50371234567" target="_blank">💬 WhatsApp</a> |
-    <a href="mailto:fontaneria@gmail.com">📧 Correo</a>
+    <a class="btn-whatsapp" href="https://wa.me/50371234567" target="_blank">💬 WhatsApp</a>
+    <p>Correo: fontaneria@gmail.com</p>
   </section>
 
   <footer>
-    <p>© 2025 Fontanería El Rápido | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+    <p>© 2025 Fontanería El Rápido | Sitio de presentación</p>
   </footer>
 </body>
 </html>
+
