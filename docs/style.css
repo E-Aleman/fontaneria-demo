@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: #f2f2f2;
+  background: #f4f4f4;
   color: #333;
 }
 
@@ -11,25 +11,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   text-align: center;
   color: white;
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 2rem;
-  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 3rem;
+  border-radius: 12px;
 }
 
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero p {
   font-size: 1.3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .btn {
@@ -37,15 +36,15 @@ body {
   color: white;
   padding: 0.8rem 1.5rem;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: bold;
 }
 
 .navbar {
-  background: #007bff;
-  padding: 1rem;
+  background: #003f7f;
   display: flex;
   justify-content: center;
+  padding: 1rem;
 }
 
 .navbar ul {
@@ -82,65 +81,59 @@ h2 {
 
 .card {
   background: white;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
+  font-size: 1.1rem;
 }
 
 .galeria {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 2rem;
 }
 
 .galeria img {
   width: 300px;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 blockquote {
   background: #e9ecef;
   padding: 1rem;
+  border-left: 4px solid #007bff;
   margin: 1rem auto;
-  border-left: 5px solid #007bff;
   max-width: 700px;
 }
 
-.btn-wsp {
-  display: inline-block;
-  margin-top: 1rem;
-  background: #25d366;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
 .redes {
-  margin-top: 2rem;
   display: flex;
-  gap: 1.5rem;
   justify-content: center;
-  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 1.5rem 0;
 }
 
 .redes a {
+  font-size: 2rem;
+  color: #333;
   text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.redes a:hover {
+  transform: scale(1.2);
   color: #007bff;
-  font-weight: bold;
 }
 
 footer {
-  text-align: center;
   background: #222;
   color: white;
+  text-align: center;
   padding: 1.5rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
-  
