@@ -1,3 +1,30 @@
+# ⏰ DISCIPLINA 4:30 — Personal Operating System
+
+Aplicación de 90 días para hábitos, sueño, rutinas, prioridades y enfoque. Vive en la ruta
+**`/disciplina`**, funciona 100 % en el navegador (sin backend, sin cuenta) y guarda los datos
+en **IndexedDB**. No requiere configurar Supabase ni Mercado Pago.
+
+```bash
+npm install
+npm run dev        # abrir http://localhost:3000/disciplina
+npm test           # pruebas de reglas de negocio
+npm run build && npm start   # producción
+```
+
+- Código: `src/app/disciplina/` (`_lib/` lógica, datos y respaldo; `_components/` módulos de UI).
+- Capa de datos desacoplada: interfaz `Repository` (`_lib/repository.ts`); basta otra implementación para usar una base remota.
+- Respaldo JSON con validación (Configuración) y exportación CSV (Estadísticas).
+
+**Denominadores de los porcentajes:** cumplimiento = hábitos completados / hábitos *programados*.
+Un hábito está programado un día si está activo (no pausado, ya creado), su frecuencia incluye ese día
+de la semana, el día está entre los días activos y no es domingo flexible. Los días futuros nunca
+cuentan; los días sin hábitos programados no tienen porcentaje y no rompen rachas. Un día suma a la
+racha si alcanza el umbral configurado (80 % por defecto); hoy suma si ya lo alcanzó, pero no la rompe
+mientras está en curso. El sueño "cumple la meta" solo si despiertas a tiempo **y** duermes al menos el
+mínimo saludable (7 h por defecto). Zona horaria por defecto: America/El_Salvador.
+
+---
+
 # 📋 Productividad — Tareas, Hábitos y Notas
 
 Aplicación de productividad personal construida con **Next.js 16 (App Router)**,
